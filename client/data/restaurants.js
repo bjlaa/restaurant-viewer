@@ -1,4 +1,4 @@
-export default const restaurants = [
+const restaurants = [
 	{
 		'code': 'huKjdiefn',
 		'title': "The Pirate's Burgers",
@@ -6,3 +6,5 @@ export default const restaurants = [
 		'img': ''
 	}
 ];
+
+export default restaurants;

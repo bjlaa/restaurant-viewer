@@ -1,4 +1,4 @@
-export default const comments = {
+const comments = {
 	"huKjdiefn": [
 		{
 			"text": "Wow, never had a burger like this!",
@@ -6,3 +6,4 @@ export default const comments = {
 		}
 	]
 }
+export default comments;
