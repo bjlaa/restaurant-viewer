@@ -4,6 +4,7 @@
 //2. copy of the current state
 
 export default function restaurants(state = [], action) {
+	console.log('the restaurant will change');
 	console.log(state, action);
 	return state;
 }

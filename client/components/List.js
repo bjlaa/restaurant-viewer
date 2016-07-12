@@ -1,11 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router';
+
+import Photo from './Photo';
 
 const List = React.createClass({
 	render() {
 		return (
 			<div>
-				I'm the restaurant list
+				{this.props.restaurants.map(
+					(restaurant, i) => <Photo {...this.props} 
+															key={i} 
+															i={i} 
+															restaurant={restaurant}/>)
+				}
 			</div>
 		)
 	}

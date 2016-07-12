@@ -5,7 +5,7 @@ import { render } from 'react-dom';
 import css from './styles/style.scss';
 
 // Import Components
-import Main from './components/Main';
+import App from './components/App';
 import List from './components/List';
 import Restaurant from './components/Restaurant';
 
@@ -18,7 +18,7 @@ import store, { history } from './store';
 const router = (
 	<Provider store={store}>
 		<Router history={history}>
-			<Route path='/' component={Main}>
+			<Route path='/' component={App}>
 				<IndexRoute component={List} ></IndexRoute>
 				<Route path='/view/:restaurantId' component={Restaurant}></Route>
 			</Route>
