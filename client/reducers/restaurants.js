@@ -4,7 +4,18 @@
 //2. copy of the current state
 
 export default function restaurants(state = [], action) {
-	console.log('the restaurant will change');
-	console.log(state, action);
-	return state;
+	console.log(action);
+	switch(action.type) {
+		case 'UPDATE_NOTE':
+		// return the updated state
+			const i = action.index;
+			return [
+				...state.slice(0, i), // before the one updating
+				{...state[i], note: action.note},
+				...state.slice(i+1), //after the one updating
+			]
+		default:
+			return state;
+	}
+	
 }

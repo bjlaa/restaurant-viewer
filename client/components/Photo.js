@@ -18,11 +18,11 @@ const Photo = React.createClass({
 					<p>{restaurant.title}</p>
 					<div className=''>
 						<button className='rating'>
-							<div className='star1'>&#9734;</div>
-							<div className='star2'>&#9734;</div>
-							<div className='star3'>&#9734;</div>
-							<div className='star4'>&#9734;</div>
-							<div className='star5'>&#9734;</div>							
+							<div onClick={this.props.addNote.bind(null, 1)} className='star1'>&#9734;</div>
+							<div onClick={this.props.addNote.bind(null, 2)} className='star2'>&#9734;</div>
+							<div onClick={this.props.addNote.bind(null, 3)} className='star3'>&#9734;</div>
+							<div onClick={this.props.addNote.bind(null, 4)} className='star4'>&#9734;</div>
+							<div onClick={this.props.addNote.bind(null, 5)} className='star5'>&#9734;</div>							
 						</button>
 						<Link to={`/view/${restaurant.code}`}>
 							<span className='comments-count'>
