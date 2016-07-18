@@ -4,17 +4,21 @@ import Comments from './Comments';
 
 const Restaurant = React.createClass({
 	render() {
-		// index of the post
+
+		const { restaurantId } = this.props.params
+		
 		const i = this.props.restaurants.findIndex((restaurant) => restaurant.code === 
-			this.props.params.restaurantId);
+							restaurantId);
+
 		const restaurant = this.props.restaurants[i];
 		console.log(i, restaurant);
-		// get us the post
+		
+		const restaurantComments = this.props.comments[restaurantId] || [];
 
 		return (
 			<div>
 				<Photo i={i} restaurant={restaurant} {...this.props}/>
-				<Comments />
+				<Comments restaurantComments={restaurantComments} />
 			</div>
 		)
 	}
