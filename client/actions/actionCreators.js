@@ -1,7 +1,8 @@
 // increment
-export function addNote(note) {
+export function addNote(index, note) {
 	return {
 		type: 'UPDATE_NOTE',
+		index,
 		note
 	}
 }
