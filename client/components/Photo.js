@@ -2,8 +2,6 @@ import React from 'react';
 import { Link } from 'react-router';
 import CSSTransitionGroup from 'react-addons-css-transition-group';
 
-import Review from './Review';
-
 const Photo = React.createClass({
 	render() {
 		const { restaurant, i, comments } = this.props;
@@ -19,7 +17,6 @@ const Photo = React.createClass({
 				<figcaption>
 					<p>{restaurant.title}</p>
 					<div className=''>
-						<Review />
 						<Link to={`/view/${restaurant.code}`}>
 							<span className='comments-count'>
 								<span className='speech-bubble' ></span>

@@ -7,7 +7,7 @@ const Comments = React.createClass({
 				<p>
 					<strong>{comment.user}</strong>
 					{comment.text}
-					<button>&times;</button>
+					<button onClick={this.props.removeComment.bind(null, this.props.params.restaurantId, i)}>&times;</button>
 				</p>
 			</div>			
 		);

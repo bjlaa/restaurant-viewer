@@ -1,6 +1,7 @@
 import React from 'react';
 import Photo from './Photo';
 import Comments from './Comments';
+import Reviews from './Reviews';
 
 const Restaurant = React.createClass({
 	render() {
@@ -11,14 +12,15 @@ const Restaurant = React.createClass({
 							restaurantId);
 
 		const restaurant = this.props.restaurants[i];
-		console.log(i, restaurant);
 		
 		const restaurantComments = this.props.comments[restaurantId] || [];
+		const restaurantReviews = this.props.reviews[restaurantId] || [];
 
 		return (
 			<div>
 				<Photo i={i} restaurant={restaurant} {...this.props}/>
 				<Comments restaurantComments={restaurantComments} {...this.props}/>
+				<Reviews restaurantReviews={restaurantReviews} {...this.props}/>
 			</div>
 		)
 	}

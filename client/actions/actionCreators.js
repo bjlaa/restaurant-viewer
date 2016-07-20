@@ -8,20 +8,20 @@ export function addNote(index, note) {
 }
 
 // add comment
-export function addComment(postId, author, comment) {
+export function addComment(restaurantId, author, comment) {
 	console.log("dispatching add comment");
 	return {
 		type: 'ADD_COMMENT',
-		postId,
+		restaurantId,
 		author,
 		comment
 	}
 }
 // remove comment
-export function removeComment(postId, i) {
+export function removeComment(restaurantId, i) {
 	return {
 		type: 'REMOVE_COMMENT',
-		postId,
+		restaurantId,
 		i
 	}
 }

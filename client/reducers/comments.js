@@ -7,14 +7,18 @@ function postComments(state = [], action) {
 				text: action.comment
 			}];
 		case 'REMOVE_COMMENT':
-			return state;
+			// we need to return the state without the deleted comment
+			return [
+				...state.slice(0, action.i),
+				...state.slice(action.i+1)
+			];
 		default:
 			return state;
 	}
 	return state;
 }
+
 function comments(state = [], action) {
-	console.log('post comment');
 	if(typeof action.restaurantId !== 'undefined') {
 		return {
 			// take the current state
