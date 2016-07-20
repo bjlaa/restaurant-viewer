@@ -4,7 +4,6 @@
 //2. copy of the current state
 
 export default function restaurants(state = [], action) {
-	console.log(action);
 	switch(action.type) {
 		case 'UPDATE_NOTE':
 		// return the updated state
