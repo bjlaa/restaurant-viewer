@@ -9,6 +9,7 @@ export function addNote(index, note) {
 
 // add comment
 export function addComment(postId, author, comment) {
+	console.log("dispatching add comment");
 	return {
 		type: 'ADD_COMMENT',
 		postId,

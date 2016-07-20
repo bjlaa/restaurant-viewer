@@ -18,7 +18,7 @@ const Restaurant = React.createClass({
 		return (
 			<div>
 				<Photo i={i} restaurant={restaurant} {...this.props}/>
-				<Comments restaurantComments={restaurantComments} />
+				<Comments restaurantComments={restaurantComments} {...this.props}/>
 			</div>
 		)
 	}
