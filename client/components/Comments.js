@@ -21,7 +21,7 @@ const Comments = React.createClass({
 	},
 	render() {
 		return(
-			<div>
+			<div className='comments'>
 				{this.props.restaurantComments.map(this.renderComment)}
 				<form onSubmit={this.handleSubmit} ref='commentForm' action="">
 					<input type="text" ref='author' placeholder='author'/>

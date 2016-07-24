@@ -17,10 +17,10 @@ const Restaurant = React.createClass({
 		const restaurantReviews = this.props.reviews[restaurantId] || [];
 
 		return (
-			<div>
+			<div className='restaurant-details'>
 				<Photo i={i} restaurant={restaurant} {...this.props}/>
-				<Comments restaurantComments={restaurantComments} {...this.props}/>
 				<Reviews restaurantReviews={restaurantReviews} {...this.props}/>
+				<Comments restaurantComments={restaurantComments} {...this.props}/>
 			</div>
 		)
 	}

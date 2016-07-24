@@ -4,23 +4,25 @@ const Reviews = React.createClass({
 	renderReviews(review, i) {
 		return (
 			<div key={i} className='review'>
-				<div className='author'>{review.author}</div>
-				<div className='rating'>
-					<p>{review.rating}</p>
+				<div className='review-author'>{review.author}:</div>
+				<div className='review-rating'>
+					<p>{review.rating}/5</p>
 				</div>
-				<div className='text'>{review.text}</div>
+				<div className='review-text'>{review.text}</div>
 			</div>			
 		)
 	},
 
 	render() {
 		return(
-			<div>
+			<div className='reviews'>
+				<p className='reviews-title'>Restaurant reviews:</p>
 				{this.props.restaurantReviews.map(this.renderReviews)}
-				<form onSubmit={this.handleSubmit} ref='reviewForm'>
-					<input type="text" ref='author' placeholder='author'/>
-					<input type="text" ref='rating' placeholder='rating'/>
-					<input type="text" ref='text' placeholder='text'/>
+				<form className='reviews-form' onSubmit={this.handleSubmit} ref='reviewForm'>
+					<p className='reviews-form-message'>Post your own review:</p>
+					<input className='reviews-form-author' type="text" ref='author' placeholder='author'/>
+					<input className='reviews-form-rating' type="text" ref='rating' placeholder='rating'/>
+					<input className='reviews-form-text' type="text" ref='text' placeholder='text'/>
 					<input type="submit" hidden/>
 				</form>				
 			</div>
