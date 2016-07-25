@@ -122,6 +122,10 @@ a {
 		Reviews Component
   */
 .reviews {
+	@media (max-width: 767px){
+		width: 90%;
+		margin-left: 5%;
+	}	
 	width: 66.6%;
 	font-family: $font;
 	color: $text-color;
@@ -137,27 +141,82 @@ a {
 }
 
 .review-author {
+	@media (max-width: 767px){
+		width: 33.3%;
+		margin-left: 0;
+	}
 	width: 15%;
 	font-size: 10pt;
 }
 .review-rating {
+	@media (max-width: 767px){
+		width: 33.3%;
+		margin-left: 0;
+	}
 	width: 10%;
 	font-size: 10pt;
 }
 .review-text {
+	@media (max-width: 767px){
+		width: 33.3%;
+		margin-left: 0;
+	}
 	width: 33.3%;
 	font-size: 10pt;
 }
 .reviews-form-message {
 	font-size: 8pt;
 }
+.reviews-form-author {
+	width: 30%;
+	margin-right: 70%;
+}
+.reviews-form-rating {
+	width: 30%;
+	margin-right: 70%;
+}
+.reviews-form-text {
+	width: 30%;
+	margin-right: 70%;
+}
   /*
 		Comments Component
   */
-.comments {
-
+.comments-container {
+	margin-top: 20px;
+	background-color: rgba(128, 128, 128, 0.2);
+	width: 80%;
+	margin-left: 5%;
+	padding-left: 5%;
+	padding-bottom: 5%;
+	font-family: $font;
+	color: $text-color;
 }
-
+.comments-container-title {
+	font-size: 12pt;
+	text-decoration: underline;
+}
+.comment-unit {
+	@media (max-width: 767px){
+		width: 80%;
+		margin-left: 0;
+	}
+	font-size: 10pt;
+	background-color: white;
+	border-radius: 50px;
+	width: 40%;
+	padding-left: 10%;
+}
+.comment-unit-btn-delete {
+	float: right;
+	margin-left: 40%;
+}
+.comment-form {
+	margin-top: 30px;
+}
+.comment-form-message {
+	font-size: 9pt;
+}
 
 
 

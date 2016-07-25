@@ -5,14 +5,24 @@ const Reviews = React.createClass({
 		return (
 			<div key={i} className='review'>
 				<div className='review-author'>{review.author}:</div>
-				<div className='review-rating'>
-					<p>{review.rating}/5</p>
-				</div>
+				<div className='review-rating'>{review.rating}/5</div>
 				<div className='review-text'>{review.text}</div>
 			</div>			
 		)
 	},
+	handleSubmit(event) {
+		event.preventDefault();
+		const { restaurantId } = this.props.params;
+		const author = this.refs.author.value;
+		const rating = this.refs.rating.value;
+		const text = this.refs.text.value;
+		this.props.addReview(restaurantId, author, rating, text);
 
+
+		this.refs.author.value = '';
+		this.refs.rating.value = '';
+		this.refs.text.value = '';
+	},
 	render() {
 		return(
 			<div className='reviews'>
