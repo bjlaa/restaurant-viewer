@@ -1,11 +1,13 @@
 function postReview(state = [], action) {
+	console.log(action);
 	switch(action.type) {
 		case 'ADD_REVIEW':
 			// return existing state with the new comment
 			return [...state, {
 				author: action.author,
 				rating: action.rating,
-				text: action.text
+				text: action.text,
+				date: action.date
 			}];
 		default:
 			return state;

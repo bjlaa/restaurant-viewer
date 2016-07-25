@@ -26,12 +26,13 @@ export function removeComment(restaurantId, i) {
 	}
 }
 
-export function addReview(restaurantId, author, rating, text) {
+export function addReview(restaurantId, author, rating, text, date) {
 	return {
 		type: 'ADD_REVIEW',
 		restaurantId,
 		author,
 		rating,
-		text
+		text,
+		date
 	}
 }

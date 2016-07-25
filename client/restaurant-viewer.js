@@ -8,6 +8,7 @@ import css from './styles/style.scss';
 import App from './components/App';
 import List from './components/List';
 import Restaurant from './components/Restaurant';
+import Filter from './components/Filter';
 
 // Import React router deps
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';

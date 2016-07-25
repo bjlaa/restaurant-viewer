@@ -74,6 +74,26 @@ a {
 	flex-wrap: wrap;
 }
 	/*
+		Filter Component
+	*/
+.filter-restaurants {
+	width: 100%;
+	color: $text-color;
+	font-family: $font;
+	display: flex;
+	flex-wrap: wrap;
+}
+.filter-title {
+	width: 33.3%;
+	font-size: 15pt;
+}
+.filter-food-field {
+	width: 33.3%;
+}
+.filter-city-field {
+	
+}
+	/*
 		Photo Component
 	*/
 .restaurant-snippet {
@@ -150,7 +170,7 @@ a {
 }
 .review-rating {
 	@media (max-width: 767px){
-		width: 33.3%;
+		width: 17%;
 		margin-left: 0;
 	}
 	width: 10%;
@@ -164,6 +184,9 @@ a {
 	width: 33.3%;
 	font-size: 10pt;
 }
+.review-date {
+	@extend .review-text;
+}
 .reviews-form-message {
 	font-size: 8pt;
 }
@@ -172,12 +195,13 @@ a {
 	margin-right: 70%;
 }
 .reviews-form-rating {
-	width: 30%;
-	margin-right: 70%;
+	@extend .reviews-form-author;
 }
 .reviews-form-text {
-	width: 30%;
-	margin-right: 70%;
+	@extend .reviews-form-author;
+}
+.reviews-form-field {
+	font-size: 9pt;
 }
   /*
 		Comments Component
@@ -210,12 +234,22 @@ a {
 .comment-unit-btn-delete {
 	float: right;
 	margin-left: 40%;
+	font-size: 20pt;
+	background-color: white;
+	border-radius: 10px;
 }
 .comment-form {
 	margin-top: 30px;
 }
 .comment-form-message {
 	font-size: 9pt;
+}
+.comment-form-author {
+	width: 40%;
+	margin-right: 60%;
+}
+.comment-form-text {
+	@extend .comment-form-author;
 }
 
 

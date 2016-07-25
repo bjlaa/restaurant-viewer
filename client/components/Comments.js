@@ -6,6 +6,7 @@ const Comments = React.createClass({
 			<div key={i} className='comment-unit'>
 					<strong className='comment-unit-author'>{comment.user}</strong>
 					<button 
+					aria-label='delete'
 					className='comment-unit-btn-delete'
 					onClick={this.props.removeComment.bind(null, this.props.params.restaurantId, i)}
 					>&times;</button>
@@ -26,17 +27,36 @@ const Comments = React.createClass({
 	},
 	render() {
 		return(
-			<div className='comments-container'>
-				<p className='comments-container-title'>Comments:</p>
+			<section className='comments-container'>
+				<h3 className='comments-container-title'>Comments:</h3>
 				{this.props.restaurantComments.map(this.renderComment)}
 
 				<form className='comment-form' onSubmit={this.handleSubmit} ref='commentForm' action="">
-					<p className='comment-form-message'>Post your own comment:</p>
-					<input className='comment-form-author' type="text" ref='author' placeholder='author'/>
-					<input className='comment-form-text' type="text" ref='comment' placeholder='comment'/>
-					<input type="submit" hidden/>
+					<h4 className='comment-form-message'>Post your own comment:</h4>
+					<div className='comment-form-field'>
+						<label htmlFor="comment-form-author">Author:</label>
+						<input 
+						id='comment-form-author'
+						className='comment-form-author' 
+						type="text" 
+						ref='author' 
+						placeholder='author'
+						/>
+					</div>
+					<div className='comment-form-field'>
+					<label htmlFor="comment-form-text">Text:</label>
+						<input 
+						id='comment-form-text'
+						className='comment-form-text' 
+						type="text" 
+						ref='comment' 
+						placeholder='comment'
+						/>
+					</div>
+					
+					<input type="submit" value='Submit' hidden/>
 				</form>
-			</div>
+			</section>
 		)
 	}
 });

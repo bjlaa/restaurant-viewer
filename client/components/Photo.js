@@ -9,7 +9,9 @@ const Photo = React.createClass({
 			<Link className='restaurant-snippet' to={`/view/${restaurant.code}`} >
 				<img className='restaurant-photo' src={restaurant.img} alt={restaurant.alt}/>
 				<div className='restaurant-text'>
-					<p className='restaurant-title'>{restaurant.title}</p>
+					<h2 className='restaurant-title'>{restaurant.title}</h2>
+					<p className='restaurant-desc'>{restaurant.address}</p>
+					<p className='restaurant-desc'>{restaurant.hours}</p>
 					<p className='restaurant-desc'>{restaurant.desc}</p>						
 				</div>
 			</Link>
