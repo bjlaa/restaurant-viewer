@@ -18,7 +18,7 @@ const restaurants = [
 		'note': '',
 		'alt': 'A picture of Traps in the burrito',
 		'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-		'address': 'Colonel Street 123, Orlando',
+		'address': 'Colonel Street 123, Atlanta',
 		'hours': '1pm - 1:30pm'
 	},
 	{
@@ -29,7 +29,7 @@ const restaurants = [
 		'note': '',
 		'alt': 'A picture of The Sequoia Soups',
 		'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-		'address': 'Colonel Street 123, Orlando',
+		'address': 'Colonel Street 123, St. Louis',
 		'hours': '1pm - 1:30pm'
 	},	
 ];
