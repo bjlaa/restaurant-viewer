@@ -1,13 +1,13 @@
 # Restaurant Viewer
 
-A simple React + Redux implementation. This will be turned into a free video series once the app is totally fleshed out.
+This is a simple app built in respect with Web Accessibility principles. It displays a list of restaurant, allowing the user to filter this list. A comment section and a review form are made available for the user.
 
-## Running
+## Getting Started 
 
-First `npm install` to grab all the necessary dependencies. 
+Download or clone the repository from Github, then:
 
-Then run `npm start` and open <localhost:7770> in your browser.
+* in command line, move to the downloaded folder
+* type in 'npm install' to grab all the necessary dependencies
+* type in `npm start` 
+* visit <localhost:7770> in your browser
 
-## Production Build
-
-Run `npm build` to create a distro folder and a bundle.js file.
