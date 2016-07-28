@@ -2,10 +2,11 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const Photo = React.createClass({
+
 	render() {
 		const { restaurant, i, comments } = this.props;
 		return (
-			<Link className='restaurant-snippet' to={`/view/${restaurant.code}`} >
+			<Link className={'restaurant-snippet'+i} to={`/view/${restaurant.code}`} >
 				<img className='restaurant-photo' src={restaurant.img} alt={restaurant.alt}/>
 				<div className='restaurant-text'>
 					<h2 className='restaurant-title'>{restaurant.title}</h2>

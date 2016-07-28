@@ -2,7 +2,6 @@ import React from 'react';
 
 const Filter = React.createClass({
 	handleChange() {
-		console.log('handling');
 		const food = this.refs.filterFood.value;
 		const city = this.refs.filterCity.value;
 		this.props.filterRestaurants.bind(null,food, city)();
@@ -36,9 +35,9 @@ const Filter = React.createClass({
 					name="filter-city"
 					>
 						<option value="all">All</option>
-						<option value="Orlando">Orlando</option>
-						<option value="Atlanta">Atlanta</option>
-						<option value="St. Louis">St. Louis</option>
+						<option value="orlando">Orlando</option>
+						<option value="atlanta">Atlanta</option>
+						<option value="stlouis">St. Louis</option>
 					</select>
 				</div>
 			</section>
