@@ -8,9 +8,9 @@ module.exports = {
     './client/restaurant-viewer'
   ],
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: __dirname + '/dist',
     filename: 'bundle.js',
-    publicPath: '/static/'
+    publicPath: '/dist/'
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
