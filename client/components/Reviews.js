@@ -7,7 +7,7 @@ const Reviews = React.createClass({
 			<div key={i} className='review'>
 			  <div className='review-date' >{review.date}</div>
 				<div className='review-author'>{review.author}:</div>
-				<div className='review-rating'>{review.rating}/5</div>
+				<div className='review-rating'>{review.rating}</div>
 				<div className='review-text'>{review.text}</div>
 				
 			</div>			
@@ -63,16 +63,18 @@ const Reviews = React.createClass({
 					</div>
 					<div className='reviews-form-field' >
 						<label htmlFor="reviews-form-text">Text:</label>
-						<input 
+						<textarea 
+						name="" 
 						id='reviews-form-text'
-						className='reviews-form-text' 
-						type="text" 
+						className='reviews-form-text'  
 						ref='text' 
-						placeholder='text'
-						/>
+						placeholder='text'						 
+						cols="30" 
+						rows="10"
+						></textarea>
 					</div>
 					<div className='reviews-form-field'>
-						<input type="submit" value='Submit' hidden/>
+						<input type="submit" value='Submit'/>
 					</div>
 					
 				</form>				

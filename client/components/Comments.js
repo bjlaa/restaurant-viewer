@@ -45,16 +45,19 @@ const Comments = React.createClass({
 					</div>
 					<div className='comment-form-field'>
 					<label htmlFor="comment-form-text">Text:</label>
-						<input 
+						<textarea 
 						id='comment-form-text'
-						className='comment-form-text' 
-						type="text" 
-						ref='comment' 
+						className='comment-form-text'
+						name="comment" 
 						placeholder='comment'
-						/>
+						ref='comment'
+						id="" 
+						cols="30" 
+						rows="10"
+						></textarea>
 					</div>
 					
-					<input type="submit" value='Submit' hidden/>
+					<input type="submit" value='Submit'/>
 				</form>
 			</section>
 		)
