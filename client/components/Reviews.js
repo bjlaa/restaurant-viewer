@@ -54,11 +54,11 @@ const Reviews = React.createClass({
 						ref='rating'
 						defaultValue='5'
 						>
-							<option aria-label='one star' value="1">&#9734; </option>
-							<option aria-label='two stars' value="2">&#9734; &#9734;</option>
-							<option aria-label='three stars' value="3">&#9734; &#9734; &#9734;</option>
-							<option aria-label='four stars' value="4">&#9734; &#9734; &#9734; &#9734;</option>
-							<option aria-label='five stars' value="5">&#9734; &#9734; &#9734; &#9734; &#9734;</option>
+							<option aria-label='one star' value="☆">☆</option>
+							<option aria-label='two stars' value="☆☆">☆☆</option>
+							<option aria-label='three stars' value="☆☆☆">☆☆☆</option>
+							<option aria-label='four stars' value="☆☆☆☆">☆☆☆☆</option>
+							<option aria-label='five stars' value="☆☆☆☆☆">☆☆☆☆☆</option>
 						</select>
 					</div>
 					<div className='reviews-form-field' >

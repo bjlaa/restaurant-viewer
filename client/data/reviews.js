@@ -1,13 +1,13 @@
 const reviews = {
 	"huKjdiefn": [
 		{	
-			'rating': '&#9734; &#9734; &#9734; &#9734; &#9734;',
+			'rating': '☆☆☆☆☆',
 			'text': 'Wow, never had a burger like this!',
 			'author': 'Joe Conrie',
 			'date': '12/25/2016'
 		},
 		{
-			'rating': '&#9734; &#9734; &#9734;',
+			'rating': '☆☆☆',
 			'text': 'Meh!',
 			'author': 'Daniel Bongo',
 			'date': '12/25/2016'
@@ -15,13 +15,13 @@ const reviews = {
 	],
 	'kzaopOKdo': [
 		{
-			'rating': '&#9734; &#9734; &#9734; &#9734;',
+			'rating': '☆☆☆☆',
 			'text': 'Not bad!',
 			'author': 'Ellie Macdonald',
 			'date': '12/25/2016'
 		},
 		{
-			'rating': '&#9734; &#9734; &#9734; &#9734;',
+			'rating': '☆☆☆☆',
 			'text': 'Pretty good!',
 			'author': 'Camilla Ferguson',
 			'date': '12/25/2016'
@@ -29,13 +29,13 @@ const reviews = {
 	],
 	'edkeoIkfn': [
 		{
-			'rating': '&#9734; &#9734;',
+			'rating': '☆☆',
 			'text': 'Bad. Very bad, oh god.',
 			'author': 'Douglas Ramsey',
 			'date': '12/25/2016'
 		},	
 		{
-			'rating': '&#9734;',
+			'rating': '☆',
 			'text': 'I almost felt sick!',
 			'author': 'Bruce Barrymore',
 			'date': '12/25/2016'

@@ -1,5 +1,4 @@
 import React from 'react';
-import Photo from './Photo';
 import Comments from './Comments';
 import Reviews from './Reviews';
 
@@ -18,7 +17,16 @@ const Restaurant = React.createClass({
 
 		return (
 			<div className='restaurant-details'>
-				<Photo i={i} restaurant={restaurant} {...this.props}/>
+				<div className='restaurant-snippet'>
+					<img className='restaurant-photo' src={restaurant.img} alt={restaurant.alt}/>
+					<div className='restaurant-text'>
+						<h2 className='restaurant-title'>{restaurant.title}</h2>
+						<p className='restaurant-desc'>{restaurant.address}</p>
+						<p className='restaurant-desc'>{restaurant.hours}</p>
+						<p className='restaurant-desc'>{restaurant.desc}</p>						
+					</div>					
+				</div>
+
 				<Reviews restaurantReviews={restaurantReviews} {...this.props}/>
 				<Comments restaurantComments={restaurantComments} {...this.props}/>
 			</div>

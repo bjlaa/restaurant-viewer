@@ -1,12 +1,3 @@
-// increment
-export function addNote(index, note) {
-	return {
-		type: 'UPDATE_NOTE',
-		index,
-		note
-	}
-}
-
 // add comment
 export function addComment(restaurantId, author, comment) {
 	console.log("dispatching add comment");
