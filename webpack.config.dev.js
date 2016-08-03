@@ -8,7 +8,7 @@ module.exports = {
     './client/restaurant-viewer'
   ],
   output: {
-    path: __dirname + 'dist',
+    path: __dirname + '/dist',
     filename: 'bundle.js',
     publicPath: '/dist/'
   },
