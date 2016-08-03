@@ -11,3 +11,7 @@ Download or clone the repository from Github, then:
 * type in `npm start` 
 * visit <localhost:7770> in your browser
 
+In order to minify the JS bundle, run:
+
+* `NODE_ENV=production webpack --config webpack.config.prod.js`
+
