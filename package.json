@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": ":) ",
   "scripts": {
-    "build": "NODE_ENV=production webpack --config webpack.config.prod.js",
+    "build": "NODE_ENV=production webpack-dev-server ",
     "test": "NODE_ENV=production mocha './tests/**/*.spec.js' --compilers js:babel-core/register",
     "clean": "rimraf dist",
     "start": "node devServer.js",
@@ -57,6 +57,7 @@
     "expect": "^1.18.0",
     "expect-jsx": "^2.5.1",
     "mocha": "^2.4.5",
-    "react-addons-test-utils": "^15.0.2"
+    "react-addons-test-utils": "^15.0.2",
+    "webpack-dev-server": "^1.14.1"
   }
 }

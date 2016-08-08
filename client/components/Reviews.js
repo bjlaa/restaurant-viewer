@@ -7,7 +7,7 @@ const Reviews = React.createClass({
 			<div key={i} className='review'>
 			  <div className='review-date' >{review.date}</div>
 				<div className='review-author'>{review.author}:</div>
-				<div className='review-rating'>{review.rating}</div>
+				<div aria-label='Rating'className='review-rating'>{review.rating}</div>
 				<div className='review-text'>{review.text}</div>
 				
 			</div>			
@@ -62,10 +62,10 @@ const Reviews = React.createClass({
 						</select>
 					</div>
 					<div className='reviews-form-field' >
-						<label htmlFor="reviews-form-text">Text:</label>
+						<label htmlFor="reviews-form-textcomment">Text:</label>
 						<textarea 
-						name="" 
-						id='reviews-form-text'
+						name="reviews-form-textcomment" 
+						id='reviews-form-textcomment'
 						className='reviews-form-text'  
 						ref='text' 
 						placeholder='text'						 

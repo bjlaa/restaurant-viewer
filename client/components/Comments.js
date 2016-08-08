@@ -48,10 +48,9 @@ const Comments = React.createClass({
 						<textarea 
 						id='comment-form-text'
 						className='comment-form-text'
-						name="comment" 
+						name="comment-form-text" 
 						placeholder='comment'
 						ref='comment'
-						id="" 
 						cols="30" 
 						rows="10"
 						></textarea>
