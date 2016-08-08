@@ -7,7 +7,7 @@ This is a simple app built in respect with Web Accessibility principles. It disp
 Download or clone the repository from Github, then:
 
 * in command line, move to the downloaded folder
-* type in 'npm install' to grab all the necessary dependencies
+* type in `npm install` to grab all the necessary dependencies
 * type in `npm start` 
 * visit <localhost:7770> in your browser
 
