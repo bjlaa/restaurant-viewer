@@ -17,7 +17,7 @@ const Restaurant = React.createClass({
 
 		return (
 			<div className='restaurant-details'>
-				<div className='restaurant-snippet'>
+				<div className='restaurant-snippet-nolink'>
 					<img className='restaurant-photo' src={restaurant.img} alt={restaurant.alt}/>
 					<div className='restaurant-text'>
 						<h2 className='restaurant-title'>{restaurant.title}</h2>
