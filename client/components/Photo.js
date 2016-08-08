@@ -6,7 +6,7 @@ const Photo = React.createClass({
 	render() {
 		const { restaurant, i, comments } = this.props;
 		return (
-			<Link role='listitem'className='restaurant-snippet' to={`/view/${restaurant.code}`} >
+			<Link role='region'className='restaurant-snippet' to={`/view/${restaurant.code}`} >
 				<img className='restaurant-photo' src={restaurant.img} alt={restaurant.alt}/>
 				<div className='restaurant-text'>
 					<h2 className='restaurant-title'>{restaurant.title}</h2>

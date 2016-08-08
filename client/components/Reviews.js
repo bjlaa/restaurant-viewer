@@ -2,12 +2,33 @@ import React from 'react';
 import Moment from 'moment';
 
 const Reviews = React.createClass({
+	createAriaLabel(stars) {
+
+		switch(stars) {
+			case '☆':
+				return 'One star out of five';
+				break;
+			case '☆☆':
+				return 'Two stars out of five';
+				break;
+			case'☆☆☆':
+				return 'Three stars out of five';
+			case '☆☆☆☆':
+				return 'Four stars out of five';
+			case '☆☆☆☆☆':
+				return 'Five stars out of five';
+			default:
+				return 'Rating'
+		}
+	},
 	renderReviews(review, i) {
+		const rating = review.rating;
+		const ariaLabel = this.createAriaLabel.bind(null, rating)();
 		return (
 			<div key={i} className='review'>
 			  <div className='review-date' >{review.date}</div>
 				<div className='review-author'>{review.author}:</div>
-				<div aria-label='Rating'className='review-rating'>{review.rating}</div>
+				<div aria-label={ariaLabel}className='review-rating'>{review.rating}</div>
 				<div className='review-text'>{review.text}</div>
 				
 			</div>			
